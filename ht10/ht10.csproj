@@ -9,10 +9,14 @@
 
   <ItemGroup>
     <None Remove="Libs\homework10.dll" />
+    <None Remove="Libs\Libra2.dll" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Libs\homework10.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\Libra2.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -20,6 +24,9 @@
   <ItemGroup>
     <Reference Include="homework10">
       <HintPath>Libs\homework10.dll</HintPath>
+    </Reference>
+    <Reference Include="Libra2">
+      <HintPath>Libs\Libra2.dll</HintPath>
     </Reference>
   </ItemGroup>
 
