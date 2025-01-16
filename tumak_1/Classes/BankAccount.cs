@@ -107,7 +107,7 @@ namespace hw10.Classes
         /// </summary>
         public override string ToString()
         {
-            return ($"Номер счета: {id}, Баланс: {balance:N}, Тип счета: {accountType}\n");
+            return ($"Номер счета: {id}, Баланс: {balance}, Тип счета: {accountType}\n");
         }
 
         /// <summary>

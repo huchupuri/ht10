@@ -20,14 +20,17 @@ namespace ht10
             //Получить исполняемый файл, проверить с помощью утилиты ILDASM, что тестовый
             //пример ссылается на сборку и не содержит в себе классов, связанный с банковским счетом.
             Console.WriteLine("задание 1");
-            List<uint> accounts = new List<uint>()
+            BankAccountFactory factory = new BankAccountFactory();
+            List<uint> Accounts = new List<uint>()
             {
-                new BankAccountFactory().CreatBankAccount(),
-                new BankAccountFactory().CreatBankAccount(1000),
-                new BankAccountFactory().CreatBankAccount(1000, AccountType.debit),
-                new BankAccountFactory().CreatBankAccount(AccountType.debit)
+                factory.CreatBankAccount(),
+                factory.CreatBankAccount(1000),
+                factory.CreatBankAccount(1000, AccountType.debit),
+                factory.CreatBankAccount(AccountType.debit)
             };
-            foreach (uint account in accounts)
+            
+            
+            foreach (uint account in Accounts)
             {
                 Console.WriteLine(BankAccountFactory.accounts[account]);
             }

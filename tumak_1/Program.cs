@@ -33,6 +33,8 @@ namespace program
                 new BankAccountFactory().CreatBankAccount(1000, AccountType.debit),
                 new BankAccountFactory().CreatBankAccount(AccountType.debit)
             };
+            BankAccount r = BankAccountFactory.accounts[accounts[1]] as BankAccount;
+            r.Deposit(123);
             foreach (uint account in accounts)
             {
                 Console.WriteLine(BankAccountFactory.accounts[account]);
@@ -72,21 +74,14 @@ namespace program
             Console.WriteLine("задание 3");
             RationalNums r1 = new RationalNums(3, 4);
             RationalNums r2 = new RationalNums(13, 5);
-
-            Console.WriteLine($"r1: {r1}");
-            Console.WriteLine($"r2: {r2}");
             Console.WriteLine($"r1 + r2: {r1 + r2}");
-            Console.WriteLine($"r1 - r2: {r1 - r2}");
             Console.WriteLine($"r1 * r2: {r1 * r2}");   
-            Console.WriteLine($"r1 / r2: {r1 / r2}");
             Console.WriteLine($"r1 % r2: {r1 % r2}");
             Console.WriteLine($"r1 == r2: {r1 == r2}");
             Console.WriteLine($"r1 != r2: {r1 != r2}");
-            Console.WriteLine($"r1 > r2: {r1 > r2}");
             Console.WriteLine($"r1 < r2: {r1 < r2}");
             Console.WriteLine($"(float)r1: {(float)r1}");
             Console.WriteLine($"(int)r1: {(int)r2}");
-            Console.WriteLine($"r1++: {r1++}");
             Console.WriteLine($"r1--: {r1--}");
 
         }
@@ -94,8 +89,6 @@ namespace program
         {
             Complex c1 = new Complex(3, 4); 
             Complex c2 = new Complex(1, -2);
-            Console.WriteLine($"Первое число: {c1}");
-            Console.WriteLine($"Второе число: {c2}");
             Console.WriteLine($"Сумма: {c1+c2}");
             Console.WriteLine($"Разность: {c1-c2}");
             Console.WriteLine($"Произведение: {c1*c2}");
