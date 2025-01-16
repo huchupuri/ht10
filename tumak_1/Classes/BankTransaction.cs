@@ -11,7 +11,6 @@ namespace hw10.Classes
         public readonly DateTime transactionDate;
         public readonly decimal Amount;
 
-        // Конструктор
         public BankTransaction(decimal Amount)
         {
             this.transactionDate = DateTime.Now;
