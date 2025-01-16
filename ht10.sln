@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ht10", "ht10\ht10.csproj", "{C759193B-947C-45BA-B0C2-546CF8E26C70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ht10", "ht10\ht10.csproj", "{C759193B-947C-45BA-B0C2-546CF8E26C70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tumak_1", "tumak_1\tumak_1.csproj", "{873B0530-AF90-49F3-A4E2-67D124DC3F64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tumak_1", "tumak_1\tumak_1.csproj", "{873B0530-AF90-49F3-A4E2-67D124DC3F64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeTumak", "NeTumak\NeTumak.csproj", "{67BDC2DB-BC59-40EF-8B25-D551C19D5D0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{873B0530-AF90-49F3-A4E2-67D124DC3F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{873B0530-AF90-49F3-A4E2-67D124DC3F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{873B0530-AF90-49F3-A4E2-67D124DC3F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67BDC2DB-BC59-40EF-8B25-D551C19D5D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67BDC2DB-BC59-40EF-8B25-D551C19D5D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67BDC2DB-BC59-40EF-8B25-D551C19D5D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67BDC2DB-BC59-40EF-8B25-D551C19D5D0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
