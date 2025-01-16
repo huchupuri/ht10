@@ -16,7 +16,7 @@ namespace tumak_1.Classes
         }
 
         /// <summary>
-        /// Метод сортировки книг с использованием делегата
+        /// Метод сортировки
         /// </summary>
         public void Sort(BookComparer comparer)
         {
